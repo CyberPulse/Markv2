@@ -47,20 +47,20 @@ def ceknet():
             start()
         except requests.exceptions.ConnectionError:
             time.sleep(3.5)
-            print '\033[37;1m]\033[35;1m ~>\033[31;1m Tidak Ada koneksi'
+            print '\033[37;1m]\033[35;1m ~>\033[31;1m MarkHacking'
             time.sleep(1.5)
             sys.exit()
 
     except KeyboardInterrupt:
     	time.sleep(3.5)
-        exit('\n\033[37;1m[\x1b[92mx\033[37;1m] \033[31;1mProgram berhenti\n')
+        exit('\n\033[37;1m[\x1b[92mx\033[37;1m] \033[31;1mProgram Progress\n')
 
 def start():
         try:
             os.system('reset')
             print banner
             email = raw_input('\033[34;1m[\033[37;1m~\033[34;1m]\033[37;1m ID \033[36;1m| \033[37;1mEmail\033[36;1m | \033[37;1mHP \033[31;1m: \033[32;1m')
-            passw = raw_input('\033[34;1m[\033[37;1m~\033[34;1m]\033[37;1m File Wordlist   \033[31;1m:\033[32;1m ')
+            passw = raw_input('\033[34;1m[\033[37;1m~\033[34;1m]\033[37;1m File wordlist   \033[31;1m:\033[32;1m ')
             total = open(passw, 'r')
             total = total.readlines()
             print '\033[34;1m[\033[37;1m^\033[34;1m] \033[37;1mTarget\033[36;1m :\033[32;1m ' + email
@@ -100,12 +100,12 @@ def start():
                             print '\033[33;1m[=] \033[37;1mProgram Finish'
                             sys.exit()
                 except requests.exceptions.ConnectionError:
-                    print '\033[37;1m[\033[32;1mx\033[37;1m] \033[31;1mkoneksi error'
+                    print '\033[37;1m[\033[32;1mx\033[37;1m] \033[31;1Access Denied'
                     sys.exit()
 
         except IOError:
-            print '\033[37;1m[\033[32;1mx\033[37;1m] \033[37;1mAlamat wordlist tidak ada'
-            print '\033[37;1m[\033[32;1mx\033[37;1m] \033[37;1mSaya sarankan Untuk Membuatnya sendiri'
+            print '\033[37;1m[\033[32;1mx\033[37;1m] \033[37;1Hello Enter List'
+            print '\033[37;1m[\033[32;1mx\033[37;1m] \033[37;1Back To MainTool'
             sys.exit()
 
 ceknet()
